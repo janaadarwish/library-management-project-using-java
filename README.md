@@ -1,4 +1,4 @@
-# 📚 Library Management System — Java
+📚 Library Management System — Java
 
 A full-featured **GUI-based Library Management System** built in Java using **Java Swing**, developed as a university project at Helwan University. The system supports multiple user roles with dedicated dashboards, book management, reservations, notifications, and checkout history — all persisted via CSV files.
 
@@ -6,8 +6,11 @@ A full-featured **GUI-based Library Management System** built in Java using **Ja
 
 ## 🖼️ Preview
 
-> _Add screenshots of your GUI here._  
-> Example: `![Dashboard](assets/dashboard.png)`
+### Welcome Screen
+![Welcome Screen](screenshots/1772720068687_Screenshot_2026-03-05_160526.jpg)
+
+### Sign Up Screen
+![Sign Up Screen](screenshots/1772720068723_Screenshot_2026-03-05_160653.jpg)
 
 ---
 
