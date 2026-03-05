@@ -1,48 +1,109 @@
 # 📚 Library Management System — Java
 
-A console-based Library Management System built in Java as a university project. The system allows librarians and users to manage books, members, and borrowing operations efficiently.
+A full-featured **GUI-based Library Management System** built in Java using **Java Swing**, developed as a university project at Helwan University. The system supports multiple user roles with dedicated dashboards, book management, reservations, notifications, and checkout history — all persisted via CSV files.
 
 ---
 
-## 🚀 Features
+## 🖼️ Preview
 
-- 📖 Add, update, and remove books from the library catalog
-- 👤 Register and manage library members
-- 🔄 Borrow and return book functionality
-- 🔍 Search for books by title or author
-- 📋 View all available and borrowed books
+> _Add screenshots of your GUI here._  
+> Example: `![Dashboard](assets/dashboard.png)`
+
+---
+
+## ✨ Features
+
+### 👤 User Roles
+- **Admin** — Full system control, manage users and librarians
+- **Librarian** — Manage books, handle reservations and returns
+- **Patron** — Browse books, borrow, reserve, and track history
+
+### 📖 Book Management
+- Add, update, display, and search books
+- Track book status and genre
+
+### 🔄 Borrowing & Returns
+- Borrow and return books through dedicated GUI screens
+- Full checkout history tracking
+
+### 🔔 Reservations & Notifications
+- Patrons can request and reserve books
+- Librarians can accept reservation requests
+- Notification system for updates
+
+### 💾 Data Persistence
+- All data stored and loaded via CSV files:
+  - `Library.csv` — Book catalog
+  - `Users.csv` — User accounts
+  - `CheckoutHistory.csv` — Borrowing records
+  - `Notifications.csv` — System notifications
+  - `reservationRequests.csv` — Pending reservations
 
 ---
 
 ## 🛠️ Built With
 
 - **Java** — Core programming language
-- **OOP Principles** — Classes, inheritance, encapsulation, and polymorphism
-- **Console I/O** — Terminal-based user interface
+- **Java Swing** — GUI framework
+- **CSV Files** — Lightweight data persistence
+- **OOP Principles** — Encapsulation, inheritance, polymorphism, abstraction
 
 ---
 
 ## 📁 Project Structure
 
 ```
-library-management-project-using-java/
-└── Library_Management_2-main/
-    ├── Main.java          # Entry point
-    ├── Book.java          # Book class
-    ├── Member.java        # Member class
-    ├── Library.java       # Core library logic
-    └── ...                # Other supporting classes
+Library_Management/
+├── main.java                    # Entry point
+├── LoginGUI.java                # Login screen
+├── SignupGUI.java               # Signup screen
+│
+├── Admin.java                   # Admin model
+├── AdminDashboardGUI.java       # Admin dashboard
+├── AdminLoginGUI.java           # Admin login
+├── UpdateByAdminGUI.java        # Admin update user
+│
+├── Librarian.java               # Librarian model
+├── LibrarianDashboardGUI.java   # Librarian dashboard
+├── LibrarianLoginGUI.java       # Librarian login
+│
+├── Patron.java                  # Patron model
+├── PatronDashboardGUI.java      # Patron dashboard
+├── PatronLoginGUI.java          # Patron login
+├── PatronHistoryGUI.java        # Borrowing history
+│
+├── Book.java                    # Book model
+├── AddBookGUI.java              # Add book screen
+├── DisplayBookGUI.java          # Display books
+├── SearchBookGUI.java           # Search books
+├── UpdateBookDataGUI.java       # Update book info
+│
+├── RequestReserveGUI.java       # Patron reservation request
+├── ReservationRequestGUI.java   # View reservation requests
+├── AcceptReservationGUI.java    # Accept reservations
+├── ReturnBookGUI.java           # Return book screen
+├── CheckoutHistoryGUI.java      # Checkout history
+├── NotificationsGUI.java        # Notifications screen
+│
+├── User.java                    # Base user class
+├── AccountType.java             # Account type enum
+├── BookStatus.java              # Book status enum
+├── Genre.java                   # Genre enum
+│
+├── Library.csv                  # Book data
+├── Users.csv                    # User data
+├── CheckoutHistory.csv          # Borrow records
+├── Notifications.csv            # Notifications
+└── reservationRequests.csv      # Reservation requests
 ```
-
-> ⚠️ _Update this structure to match your actual files._
 
 ---
 
 ## ⚙️ Getting Started
 
 ### Prerequisites
-- Java JDK 8 or higher installed
-- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or terminal
+- Java JDK 8 or higher
+- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code)
 
 ### Run Locally
 
@@ -51,38 +112,29 @@ library-management-project-using-java/
    git clone https://github.com/janaadarwish/library-management-project-using-java.git
    ```
 
-2. Navigate to the project folder:
-   ```bash
-   cd library-management-project-using-java/Library_Management_2-main
-   ```
+2. Open the project in your IDE
 
-3. Compile the Java files:
-   ```bash
-   javac *.java
-   ```
-
-4. Run the program:
-   ```bash
-   java Main
-   ```
+3. Compile and run `main.java`
 
 ---
 
-## 📚 OOP Concepts Applied
+## 🧠 OOP Concepts Applied
 
-- **Encapsulation** — Private fields with getters/setters in Book and Member classes
-- **Inheritance** — Shared base class for library entities
-- **Polymorphism** — Method overriding for different entity types
-- **Abstraction** — Separation of logic across dedicated classes
+- **Encapsulation** — Private fields with getters/setters across all models
+- **Inheritance** — `Admin`, `Librarian`, and `Patron` extend the base `User` class
+- **Polymorphism** — Shared methods overridden per user role
+- **Abstraction** — Business logic separated from GUI layer
+- **Enums** — `AccountType`, `BookStatus`, and `Genre` for type safety
 
 ---
 
 ## 🔧 Possible Future Improvements
 
-- [ ] Add a graphical user interface (GUI) using Java Swing or JavaFX
-- [ ] Integrate a database (MySQL / SQLite) for persistent storage
+- [ ] Replace CSV storage with a proper database (MySQL / SQLite)
 - [ ] Add due date tracking and fine calculation for late returns
-- [ ] Implement file I/O to save/load library data between sessions
+- [ ] Improve UI design with JavaFX
+- [ ] Add email notifications for reservations and due dates
+- [ ] Implement search/filter by genre, author, or availability
 
 ---
 
