@@ -7,10 +7,10 @@ A full-featured **GUI-based Library Management System** built in Java using **Ja
 ## 🖼️ Preview
 
 ### Welcome Screen
-screenshots/Screenshot 2026-03-05 160526.jpg
+![Welcome Screen](screenshots/welcome.jpg)
 
 ### Sign Up Screen
-![Sign Up Screen](screenshots/1772720068723_Screenshot_2026-03-05_160653.jpg)
+![Sign Up Screen](screenshots/signup.jpg)
 
 ---
 
