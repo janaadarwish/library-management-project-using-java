@@ -1,23 +1,30 @@
-📚 Library Management System — Java
+# 📚 Library Management System — Java
+
 A console-based Library Management System built in Java as a university project. The system allows librarians and users to manage books, members, and borrowing operations efficiently.
 
-🚀 Features
+---
 
-📖 Add, update, and remove books from the library catalog
-👤 Register and manage library members
-🔄 Borrow and return book functionality
-🔍 Search for books by title or author
-📋 View all available and borrowed books
+## 🚀 Features
 
+- 📖 Add, update, and remove books from the library catalog
+- 👤 Register and manage library members
+- 🔄 Borrow and return book functionality
+- 🔍 Search for books by title or author
+- 📋 View all available and borrowed books
 
-🛠️ Built With
+---
 
-Java — Core programming language
-OOP Principles — Classes, inheritance, encapsulation, and polymorphism
-Console I/O — Terminal-based user interface
+## 🛠️ Built With
 
+- **Java** — Core programming language
+- **OOP Principles** — Classes, inheritance, encapsulation, and polymorphism
+- **Console I/O** — Terminal-based user interface
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
+```
 library-management-project-using-java/
 └── Library_Management_2-main/
     ├── Main.java          # Entry point
@@ -25,51 +32,62 @@ library-management-project-using-java/
     ├── Member.java        # Member class
     ├── Library.java       # Core library logic
     └── ...                # Other supporting classes
+```
 
-⚠️ Update this structure to match your actual files.
+> ⚠️ _Update this structure to match your actual files._
 
+---
 
-⚙️ Getting Started
-Prerequisites
+## ⚙️ Getting Started
 
-Java JDK 8 or higher installed
-Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or terminal
+### Prerequisites
+- Java JDK 8 or higher installed
+- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or terminal
 
-Run Locally
+### Run Locally
 
-Clone the repository:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/janaadarwish/library-management-project-using-java.git
+   ```
 
-bash   git clone https://github.com/janaadarwish/library-management-project-using-java.git
+2. Navigate to the project folder:
+   ```bash
+   cd library-management-project-using-java/Library_Management_2-main
+   ```
 
-Navigate to the project folder:
+3. Compile the Java files:
+   ```bash
+   javac *.java
+   ```
 
-bash   cd library-management-project-using-java/Library_Management_2-main
+4. Run the program:
+   ```bash
+   java Main
+   ```
 
-Compile the Java files:
+---
 
-bash   javac *.java
+## 📚 OOP Concepts Applied
 
-Run the program:
+- **Encapsulation** — Private fields with getters/setters in Book and Member classes
+- **Inheritance** — Shared base class for library entities
+- **Polymorphism** — Method overriding for different entity types
+- **Abstraction** — Separation of logic across dedicated classes
 
-bash   java Main
+---
 
-📚 OOP Concepts Applied
+## 🔧 Possible Future Improvements
 
-Encapsulation — Private fields with getters/setters in Book and Member classes
-Inheritance — Shared base class for library entities
-Polymorphism — Method overriding for different entity types
-Abstraction — Separation of logic across dedicated classes
+- [ ] Add a graphical user interface (GUI) using Java Swing or JavaFX
+- [ ] Integrate a database (MySQL / SQLite) for persistent storage
+- [ ] Add due date tracking and fine calculation for late returns
+- [ ] Implement file I/O to save/load library data between sessions
 
+---
 
-🔧 Possible Future Improvements
+## 👩‍💻 Author
 
- Add a graphical user interface (GUI) using Java Swing or JavaFX
- Integrate a database (MySQL / SQLite) for persistent storage
- Add due date tracking and fine calculation for late returns
- Implement file I/O to save/load library data between sessions
-
-
-👩‍💻 Author
-Jana Amin — @janaadarwish
-Computer Science Student @ Helwan University | AI & ML Enthusiast
-LinkedIn · Kaggle
+**Jana Amin** — [@janaadarwish](https://github.com/janaadarwish)  
+Computer Science Student @ Helwan University | AI & ML Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/jana-darwish-29613732b/) · [Kaggle](https://www.kaggle.com/janadarwish)
